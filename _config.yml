@@ -1,5 +1,6 @@
 # Jekyll configuration
-theme: jekyll-clean-dark
+#theme: jekyll-clean-dark
+remote_theme: streetturtle/jekyll-clean-dark
 
 name: AI 공부 블로그
 description: Software Developer
