@@ -1,4 +1,5 @@
 # Jekyll configuration
+theme: jekyll-clean-dark
 
 name: AI 공부 블로그
 description: Software Developer
