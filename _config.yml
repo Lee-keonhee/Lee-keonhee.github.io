@@ -1,6 +1,6 @@
 # Jekyll configuration
 
-name: Blog Name
+name: AI 공부 블로그
 description: Software Developer
 
 # Url is currently only used only for the RSS feed in feed.xml
@@ -22,7 +22,7 @@ share:
   email: true
 
 social:
-  github: streetturtle
+  github: Lee-keonhee
   stackoverflow: ''
   linkedin:
   instagram: ''
