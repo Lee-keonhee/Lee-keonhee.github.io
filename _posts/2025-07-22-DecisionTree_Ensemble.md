@@ -51,5 +51,5 @@ AdaBoost : 분류 성능을 향상시키는 앙상블 학습
 여러 개의 약한 학습기(약 50퍼 수준의 정답률, 대충 depth =1,Decision Stump)을 순차적으로 학습시키고 결합 - 강력한 학습기를 생성
 ---
 
-[결정트리와 랜덤 포레스트 구현 코드 확인하기]({{site.baseurl}}/_posts/2025/07/22/DecisionTree_RandomForest_code/)
+[결정트리와 랜덤 포레스트 구현 코드 확인하기]({{site.baseurl}}/2025/07/DecisionTree_RandomForest_code/)
 ---
