@@ -21,6 +21,8 @@ tags: [머신러닝기초]
 - 예측 성능 향상
 - 안정적인 모델
 
+
+Bagging의 기법을 활용한 대표적인 알고리즘이 랜덤포레스트임. 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
