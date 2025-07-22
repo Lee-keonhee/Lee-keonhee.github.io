@@ -52,14 +52,3 @@ AdaBoost : 분류 성능을 향상시키는 앙상블 학습
 
 
 [결정트리와 랜덤 포레스트 구현 코드 확인하기]({{site.baseurl}}/2025/07/22/DecisionTree_RandomForest_code/)
-```python
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.datasets import make_moons
-from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
-from matplotlib.colors import ListedColormap
-
-```
