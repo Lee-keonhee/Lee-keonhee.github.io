@@ -47,8 +47,25 @@ ex) AdaBoost(adaptive boosting) - 잘못 분류된 샘플에 가중치를 부여
 Gradient Boosting machine(GBM) - 이전 모델의 예측과 실제 값의 차이를 학습하여 다음 모델을 만드는 방식
 XGBoost, LightGBM, CatBoost - GBM을 개선해서 속도 성능을 향상시킴
 
-AdaBoost : 분류 성능을 향상시키는 앙상블 학습
+- AdaBoost : 분류 성능을 향상시키는 앙상블 학습
 여러 개의 약한 학습기(약 50퍼 수준의 정답률, 대충 depth =1,Decision Stump)을 순차적으로 학습시키고 결합 - 강력한 학습기를 생성
+스텀프의 성능 : 1/2 log ((1- total_error)/total_error)
+error가 작으면 성능이 급격히 늘어나고, error가  크면 성능이 급격히 줄어든다.
+
+cost 함수 L(y, f(x)) = e^-(y*f(x))
+y : 실제 클래스 레이블 (ex -1, 1)
+f(x) : 약한 학습기의 예측값 or 최족 분류기의 예측 점수
+맞추면, cost가 줄어들고, 예측값과 다르면 cost가 커짐.
+
+
+- Gradient Boosting Machine(GBM)
+이전 잔차의를 다음 약한 학습기가 학습 - 전체 모델을 개선해나감
+
+- XGBoost
+경사하강법 기반- 그래디언트 부스팅을 효율, 유연, 성능 측면의 극대화 - 빠른 학습속도와 높은 예측 정확도
+
+
+
 ---
 
 [결정트리와 랜덤 포레스트 구현 코드 확인하기]({{site.baseurl}}/2025/07/DecisionTree_RandomForest_code/)
