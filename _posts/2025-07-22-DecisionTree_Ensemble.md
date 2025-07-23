@@ -51,7 +51,6 @@ XGBoost, LightGBM, CatBoost - GBM을 개선해서 속도 성능을 향상시킴
 여러 개의 약한 학습기(약 50퍼 수준의 정답률, 대충 depth =1,Decision Stump)을 순차적으로 학습시키고 결합 - 강력한 학습기를 생성
 스텀프의 성능 : 1/2 log ((1- total_error)/total_error)
 error가 작으면 성능이 급격히 늘어나고, error가  크면 성능이 급격히 줄어든다.
-
 cost 함수 L(y, f(x)) = e^-(y*f(x))
 y : 실제 클래스 레이블 (ex -1, 1)
 f(x) : 약한 학습기의 예측값 or 최족 분류기의 예측 점수
