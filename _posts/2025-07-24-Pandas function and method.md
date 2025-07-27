@@ -70,6 +70,10 @@ df_from_numpy = pd.DataFrame(arr,columns=['A','B'])
 ```
 생성된 데이터프레임
 
+|   | A | B |
+|---|---|---|
+| 0 | 1 | 2 |
+| 1 | 3 | 4 |
 
 - pd.concat([df1, df2, df3]): 여러 개의 DataFrame을 위아래(행 기준)나 옆으로(열 기준) 이어붙임
 
