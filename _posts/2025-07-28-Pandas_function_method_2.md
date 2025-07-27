@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Pandas 핵심 함수와 메서드 정리-2"
-date:   2025-07-28 05:00:00 +0900
+date:   2025-07-28 09:00:00 +0900
 categories: [머신러닝, 인공지능, 데이터과학]
 tags: [Python, Pandas]
 ---
