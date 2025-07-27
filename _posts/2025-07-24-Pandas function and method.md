@@ -24,7 +24,7 @@ import pandas as pd
 
 ### Pandas 모듈 함수
 
-1. pd.read_csv(경로), pd.read_excel(경로): csv 및 excel 파일을 읽어서 Dataframe 형식으로 변환 (자주 사용하는 파라미터 sep=';': 데이터 구분자가 ,가 아닌 ;일때 사용)
+1. pd.read_csv(경로), pd.read_excel(경로): csv 및 excel 파일을 읽어서 Dataframe 형식으로 변환 <br> (자주 사용하는 파라미터 sep=';': 데이터 구분자가 ,가 아닌 ;일때 사용)
 ```python
 df = pd.read_csv(
     '파일경로',
