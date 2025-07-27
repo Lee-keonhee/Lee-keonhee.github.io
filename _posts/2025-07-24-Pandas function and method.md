@@ -38,6 +38,7 @@ df = pd.read_csv(
 ```
 
 - pd.DataFrame({'컬럼1': [값1, 값2], '컬럼2': [값3, 값4]}): 직접 데이터를 넣어서 새로운 DataFrame을 생성
+
 1. 리스트를 이용하여 데이터프레임 생성
 ```python
 df_from_list = pd.DataFrame([[1,2],[3,4]],columns=['A','B'], index=['row1', 'row2'])
