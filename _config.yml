@@ -57,3 +57,5 @@ kramdown:
   syntax_highlighter: rouge
 
 exclude: ['README.md', 'LICENSE']
+include:
+  - assets

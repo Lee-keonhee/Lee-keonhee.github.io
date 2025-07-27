@@ -30,3 +30,30 @@ tree = RandomForestClassifier(n_estimators='생성할 트리의 수(int)',
                               n_jobs=-1,
                               )
 ```
+
+---
+## 스태킹(Stacking)
+```python
+from sklearn.ensemble import StackingClassifier, RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.datasets import make_classification
+from sklearn.model_selection import train_test_split
+
+X, y = make_classification(n_samples=1000, random_state=42, n_classes=2) # 클래스 2개, 샘플 1000개
+X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
+
+estimators = [
+    ('rf', RandomForestClassifier(n_estimators=100, random_state=42)),
+    ('log_reg', LogisticRegression(solver='liblinear', random_state=42)) # 다른 모델 추가 가능
+]
+
+stk_clf = StackingClassifier(
+    estimators=estimators,
+    final_estimator=LogisticRegression(solver='liblinear', random_state=42), # 메타 모델
+    cv=5 # 교차 검증 폴드 수
+)
+
+stk_clf.fit(X_train, y_train)
+accuracy = stk_clf.score(X_test, y_test)
+print(f"스태킹 모델의 정확도: {accuracy:.4f}")
+```
