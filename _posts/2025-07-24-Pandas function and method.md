@@ -53,7 +53,6 @@ df_from_list = pd.DataFrame([[1,2],[3,4]],columns=['A','B'], index=['row1', 'row
 ```python
 df_from_dict = pd.DataFrame({'이름':['홍길동', '이순신'], '나이':[25,30]})
 ```
-
 생성된 데이터프레임
 
 3. numpy 배열을 이용한 데이터프레임 생성
@@ -65,7 +64,6 @@ import numpy as np
 arr = np.array([[1, 2], [3, 4]])
 df_from_numpy = pd.DataFrame(arr,columns=['A','B'])
 ```
-
 생성된 데이터프레임
 
 
