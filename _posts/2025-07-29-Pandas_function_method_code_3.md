@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Pandas 핵심 함수와 메서드 정리-2"
-date:   2025-07-28 05:00:00 +0900
+title:  "Pandas 핵심 함수와 메서드 code"
+date:   2025-07-29 05:00:00 +0900
 categories: [머신러닝, 인공지능, 데이터과학]
-tags: [Python, Pandas]
+tags: [Python, Pandas, code]
 ---
 
 ------
@@ -140,8 +140,5 @@ Series의 각 **개별 요소(값)**에 함수를 적용한다.
 
 더 많은 Pandas 함수와 메서드를 탐구하고 싶으시면, 아래 링크를 통해 확인할 수 있습니다.
 
-*   [** Pandas 핵심 함수와 메서드 정리-1**]({{site.baseurl}}/2025/07/Pandas_function_method_1/)
-*   [** Pandas 핵심 메서드: 데이터프레임 기본 정보확인 코드 예제**]({{site.baseurl}}/2025/07/Pandas_function_method_code_1/)
-*   [** Pandas 핵심 메서드: 데이터 선택 및 필터링 코드 예제**]({{site.baseurl}}/2025/07/Pandas_function_method_code_2/)
-*   [** Pandas 핵심 메서드: 데이터 조작 및 변형 코드 예제**]({{site.baseurl}}/2025/07/Pandas_function_method_code_3/)
-*   [** Pandas 핵심 메서드: 결측치, 중복치 처리 예제**]({{site.baseurl}}/2025/07/Pandas_function_method_code_4/)
+*   [** Pandas 핵심 메서드: 요약 통계와 탐색 (Chapter 2)**](2025-07-21-Pandas_function_method_1.md)
+*   [** Pandas 핵심 함수와 메서드 정리-1**](링크_투_Chapter1_모듈함수_포스트)
