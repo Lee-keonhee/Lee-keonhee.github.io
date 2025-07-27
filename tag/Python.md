@@ -1,4 +1,4 @@
 ---
 layout: tag_index
-tag: 머신러닝기초 
+tag: Python 
 ---
