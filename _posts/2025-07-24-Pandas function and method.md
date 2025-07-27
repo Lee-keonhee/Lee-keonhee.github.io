@@ -49,6 +49,7 @@ df_from_list = pd.DataFrame([[1,2],[3,4]],columns=['A','B'], index=['row1', 'row
 |------|---|---|
 | row1 | 1 | 2 |
 | row2 | 3 | 4 |
+
 - 딕셔너리를 이용한 데이터프레임 생성
 ```python
 df_from_dict = pd.DataFrame({'이름':['홍길동', '이순신'], '나이':[25,30]})
@@ -59,6 +60,7 @@ df_from_dict = pd.DataFrame({'이름':['홍길동', '이순신'], '나이':[25,3
 |---|-----|----|
 | 0 | 홍길동 | 25 |
 | 1 | 이순신 | 30 |
+
 - numpy 배열을 이용한 데이터프레임 생성
 
 ```python
