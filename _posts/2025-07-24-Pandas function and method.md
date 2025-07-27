@@ -24,7 +24,7 @@ import pandas as pd
 
 ### Pandas 모듈 함수
 
-1. pd.read_csv(경로), pd.read_excel(경로): csv 및 excel 파일을 읽어서 Dataframe 형식으로 변환 <br> (자주 사용하는 파라미터 sep=';': 데이터 구분자가 ,가 아닌 ;일때 사용)
+#### 1. ***pd.read_csv(경로), pd.read_excel(경로)***: csv 및 excel 파일을 읽어서 Dataframe 형식으로 변환 <br> (자주 사용하는 파라미터 sep=';': 데이터 구분자가 ,가 아닌 ;일때 사용)
 ```python
 df = pd.read_csv(
     '파일경로',
@@ -37,7 +37,7 @@ df = pd.read_csv(
     na_values=["-", "없음"]          # 결측값 처리
 )  
 ```
-2. pd.DataFrame({'컬럼1': [값1, 값2], '컬럼2': [값3, 값4]}): 직접 데이터를 넣어서 새로운 DataFrame을 생성
+#### 2. ***pd.DataFrame({'컬럼1': [값1, 값2], '컬럼2': [값3, 값4]})***: 직접 데이터를 넣어서 새로운 DataFrame을 생성
 
 - 리스트를 이용하여 데이터프레임 생성
 ```python
@@ -62,7 +62,6 @@ df_from_dict = pd.DataFrame({'이름':['홍길동', '이순신'], '나이':[25,3
 | 1 | 이순신 | 30 |
 
 - numpy 배열을 이용한 데이터프레임 생성
-
 ```python
 import pandas as pd
 import numpy as np
@@ -77,8 +76,7 @@ df_from_numpy = pd.DataFrame(arr,columns=['A','B'])
 | 0 | 1 | 2 |
 | 1 | 3 | 4 |
 
-- pd.concat([df1, df2, df3]): 여러 개의 DataFrame을 위아래(행 기준)나 옆으로(열 기준) 이어붙임
+#### 4. pd.concat([df1, df2, df3]): 여러 개의 DataFrame을 위아래(행 기준)나 옆으로(열 기준) 이어붙임
 
-- pd.merge(df1, df2, on='컬럼명'): 두 DataFrame을 특정 '키'를 기준으로 병합
-- pd.get_dummies(df['컬럼명']): 범주형 데이터를 원-핫 인코딩(One-Hot Encoding)방식으로 숫자로 변경. 범주형 데이터의 종류만큼 column을 가짐
-- 
+#### 5. pd.merge(df1, df2, on='컬럼명'): 두 DataFrame을 특정 '키'를 기준으로 병합
+#### 6. pd.get_dummies(df['컬럼명']): 범주형 데이터를 원-핫 인코딩(One-Hot Encoding)방식으로 숫자로 변경. 범주형 데이터의 종류만큼 column을 가짐
