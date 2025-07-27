@@ -43,6 +43,10 @@ df = pd.read_csv(
 df_from_list = pd.DataFrame([[1,2],[3,4]],columns=['A','B'], index=['row1', 'row2'])
 ```
 생성된 데이터프레임
+|     |  A  |  B  |
+|-----|-----|-----|
+|  1  |  1  |  2  |
+|  2  |  3  |  4  |
 
 2. 딕셔너리를 이용한 데이터프레임 생성
 ```python
@@ -65,6 +69,7 @@ df_from_numpy = pd.DataFrame(arr,columns=['A','B'])
 
 
 - pd.concat([df1, df2, df3]): 여러 개의 DataFrame을 위아래(행 기준)나 옆으로(열 기준) 이어붙임
+
 - pd.merge(df1, df2, on='컬럼명'): 두 DataFrame을 특정 '키'를 기준으로 병합
 - pd.get_dummies(df['컬럼명']): 범주형 데이터를 원-핫 인코딩(One-Hot Encoding)방식으로 숫자로 변경. 범주형 데이터의 종류만큼 column을 가짐
 - 
