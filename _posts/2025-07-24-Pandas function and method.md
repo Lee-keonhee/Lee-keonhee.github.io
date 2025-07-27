@@ -44,6 +44,7 @@ df = pd.read_csv(
 df_from_list = pd.DataFrame([[1,2],[3,4]],columns=['A','B'], index=['row1', 'row2'])
 ```
 생성된 데이터프레임
+
 |     | A | B |
 |-----|---|---|
 | 1   | 1 | 2 |
