@@ -22,9 +22,9 @@ Pandas를 사용하기 위해서 pandas 라이브러리를 불러와야 한다.
 import pandas as pd
 ```
 
-### Pandas 모듈 함수
+## Pandas 모듈 함수
 
-#### 1. ***pd.read_csv(경로), pd.read_excel(경로)***: csv 및 excel 파일을 읽어서 Dataframe 형식으로 변환 <br> (자주 사용하는 파라미터 sep=';': 데이터 구분자가 ,가 아닌 ;일때 사용)
+#### 1. ***pd.read_csv(경로), pd.read_excel(경로)***: csv 및 excel 파일을 읽어서 Dataframe 형식으로 변환 <br> (자주 사용하는 파라미터 sep=';': 데이터 구분자가 ,가 아닌 ;일때 사용)<br>
 ```python
 df = pd.read_csv(
     '파일경로',
@@ -39,7 +39,7 @@ df = pd.read_csv(
 ```
 #### 2. ***pd.DataFrame({'컬럼1': [값1, 값2], '컬럼2': [값3, 값4]})***: 직접 데이터를 넣어서 새로운 DataFrame을 생성
 
-- 리스트를 이용하여 데이터프레임 생성
+- 리스트를 이용하여 데이터프레임 생성<br>
 ```python
 df_from_list = pd.DataFrame([[1,2],[3,4]],columns=['A','B'], index=['row1', 'row2'])
 ```
@@ -50,7 +50,7 @@ df_from_list = pd.DataFrame([[1,2],[3,4]],columns=['A','B'], index=['row1', 'row
 | row1 | 1 | 2 |
 | row2 | 3 | 4 |
 
-- 딕셔너리를 이용한 데이터프레임 생성
+- 딕셔너리를 이용한 데이터프레임 생성<br>
 ```python
 df_from_dict = pd.DataFrame({'이름':['홍길동', '이순신'], '나이':[25,30]})
 ```
@@ -61,7 +61,7 @@ df_from_dict = pd.DataFrame({'이름':['홍길동', '이순신'], '나이':[25,3
 | 0 | 홍길동 | 25 |
 | 1 | 이순신 | 30 |
 
-- numpy 배열을 이용한 데이터프레임 생성
+- numpy 배열을 이용한 데이터프레임 생성<br>
 ```python
 import pandas as pd
 import numpy as np
