@@ -24,12 +24,13 @@ tags: [딥러닝 기초]
 - Softmax : i번째 클래스가 정답일 확률 pi  pi = e^z_i / sigma (e_)
 - CrossEntropy
 
+<br>
+
 ----
 ## 딥러닝의 성능 향상을 위해 고려해야 할 하이퍼 파라미터
 ---
 
 ### 1. 활성화함수(Activation Function)
-<br>
 인공신경망에서 뉴런의 입력의 가중치 합을 받아 출력 신호로 변환하는 함수
 <br>
 
@@ -38,12 +39,9 @@ tags: [딥러닝 기초]
 <br>
 
 #### 활성화 함수의 종류
-<br>
 
 - step function
 가중합이 0보다 작으면 0, 0보다 크면 1로 반환 - 미분이 안되어서 Sigmoid를 사용하게됨
-
-<br>
 
 - Sigmoid 함수
 
@@ -97,13 +95,13 @@ tags: [딥러닝 기초]
 | 한계점 | ReLU나 LeakyReLU에 비해 계산 복잡도가 높음, 해석이 어려움                                                                                            |
 
 
-##### 2. 학습률(learning rate)
+### 2. 학습률(learning rate)
 
-##### 3. epoch
+### 3. epoch
 
-##### 4. batch_size
+### 4. batch_size
 
-##### 5. optimizer
+### 5. optimizer
 
 ##### 6. hidden layer 수
 
