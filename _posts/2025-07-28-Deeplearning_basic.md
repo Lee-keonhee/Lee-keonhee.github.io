@@ -99,6 +99,7 @@ tags: [딥러닝 기초]
 ## 2. 학습률(learning rate)
 학습률은 옵티마이저가 손실 함수의 최소값을 찾아가는 과정에서 각 반복(iteration)마다 가중치를 업데이트하는 스텝의 크기를 결정하는 매개변수입니다 .
 아래 그림과 같이, 학습률의 값이 너무 높을 경우 최적 지점을 지나쳐 발산할 위험이 있으며, 너무 낮을 경우 수렴 속도가 느려지거나 지역 최적점에 갇힐 수 있습니다.
+
 ![학습률](/assets/images/proper-step-size.png)
 (이미지출처-공돌이의 수학정리노트)
 
@@ -123,5 +124,6 @@ tags: [딥러닝 기초]
 
 ## 6. dropout
 드롭아웃은 신경망의 과적합(Overfitting)을 방지하기 위한 정규화(Regularization) 기법 중 하나입니다. 학습 과정에서 무작위로 선택된 뉴런들을 임시적으로 비활성화시켜 업데이트에 참여시키지 않음으로써, 각 뉴런이 다른 뉴런에 과도하게 의존하는 것을 방지하고 모델의 일반화 성능을 향상시키는 효과를 가져옵니다.
+
 ![드롭아웃](/assets/images/dropout.png)
 (이미지출처-a simple way to prevent neural networks from overfitting)
