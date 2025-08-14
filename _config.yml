@@ -9,9 +9,7 @@ description: >
 
 show_excerpts: false
 
-# 1. url: 프로토콜(https://)을 포함하고, AIcodit 프로젝트 경로도 포함해야 합니다.
 url: "https://lee-keonhee.github.io"
-# 2. baseurl: AIcodit 프로젝트는 하위 경로에 있으므로 '/AIcodit'로 정확히 설정합니다.
 baseurl: "/"
 
 paginate: 1
@@ -21,7 +19,6 @@ tag_permalink_style: pretty
 tag_page_layout: tag_page
 tag_page_dir: tag
 
-# jekyll-dash date format (이 부분은 기존과 동일)
 dash:
   date_format: "%b %-d, %Y"
   disqus:
