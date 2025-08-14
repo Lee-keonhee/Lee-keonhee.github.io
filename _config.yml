@@ -10,9 +10,9 @@ description: >
 show_excerpts: false
 
 # 1. url: 프로토콜(https://)을 포함하고, AIcodit 프로젝트 경로도 포함해야 합니다.
-url: "https://lee-keonhee.github.io/AIcodit"
+url: "https://lee-keonhee.github.io"
 # 2. baseurl: AIcodit 프로젝트는 하위 경로에 있으므로 '/AIcodit'로 정확히 설정합니다.
-baseurl: "/AIcodit"
+baseurl: "/"
 
 paginate: 1
 paginate_path: "/blog/page:num/"
