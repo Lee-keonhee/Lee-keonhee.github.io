@@ -4,6 +4,16 @@ layout: default
 {% unless site.dash.show_author == false %}
   {% include author.html %}
 {% endunless %}
+{% if page.external_url %}
+  <meta http-equiv="refresh" content="0; url={{ page.external_url }}">
+  <link rel="canonical" href="{{ page.external_url }}">
+  <script>
+    window.location.replace("{{ page.external_url }}");
+  </script>
+  <p>이 포스트는 외부 링크로 연결됩니다. 잠시 후 <a href="{{ page.external_url }}">{{ page.external_url }}</a> 로 이동합니다.
+  </p>
+{% else %}
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   {% if site.plugins contains "jekyll/tagging" %}
