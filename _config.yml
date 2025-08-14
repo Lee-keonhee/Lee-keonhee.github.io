@@ -1,0 +1,51 @@
+# _config.yml
+
+title: AIcodit # 블로그 제목을 AIcodit으로 변경
+author: Lee-keonhee # author를 본인의 GitHub 사용자명으로 변경
+email: your-email@example.com # 본인 이메일 주소로 변경
+
+description: >
+  딥러닝의 기본부터 응용 심화까지 연구하는 공간입니다. 
+
+show_excerpts: false
+
+# 1. url: 프로토콜(https://)을 포함하고, AIcodit 프로젝트 경로도 포함해야 합니다.
+url: "https://lee-keonhee.github.io/AIcodit"
+# 2. baseurl: AIcodit 프로젝트는 하위 경로에 있으므로 '/AIcodit'로 정확히 설정합니다.
+baseurl: "/AIcodit"
+
+paginate: 1
+paginate_path: "/blog/page:num/"
+
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+# jekyll-dash date format (이 부분은 기존과 동일)
+dash:
+  date_format: "%b %-d, %Y"
+  disqus:
+    shortname: # 본인의 Disqus shortname 입력 (비워두면 비활성화)
+  social_links:
+    - url: https://github.com/Lee-keonhee # 본인 GitHub 링크로 변경
+      icon: github-square
+      color: purple
+    # ... 다른 소셜 링크 ...
+  show_author: true
+  animation_speed: 50
+  rtl: false
+
+# Build settings
+# `theme` 대신 `remote_theme`를 사용해야 합니다.
+# 3. `remote_theme` 설정: 공식 `bitbrain/jekyll-dash` 테마 리포지토리 지정
+remote_theme: bitbrain/jekyll-dash
+
+plugins:
+ # _config.yml의 plugins는 Gemfile에도 선언된 젬이어야 합니다.
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-paginate
+ - liquid-md5
+ - jekyll-tagging        # jekyll/tagging 이 아닌 젬 이름 그대로
+ - kramdown-parser-gfm   # 젬 이름 그대로
+ - jekyll-remote-theme   # remote_theme 사용을 위해 필수!
