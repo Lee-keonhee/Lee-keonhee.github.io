@@ -1,8 +1,8 @@
 # _config.yml
 
-title: AIcodit # 블로그 제목을 AIcodit으로 변경
+title: DeepL_kh # 블로그 제목을 AIcodit으로 변경
 author: Lee-keonhee # author를 본인의 GitHub 사용자명으로 변경
-email: your-email@example.com # 본인 이메일 주소로 변경
+email: dlrjsgml0315@gmail.com # 본인 이메일 주소로 변경
 
 description: >
   딥러닝의 기본부터 응용 심화까지 연구하는 공간입니다. 
