@@ -14,8 +14,8 @@ url: "https://lee-keonhee.github.io"
 # 2. baseurl: AIcodit 프로젝트는 하위 경로에 있으므로 '/AIcodit'로 정확히 설정합니다.
 baseurl: "/"
 
-paginate: 1
-paginate_path: "/blog/page:num/"
+#paginate: 1
+#paginate_path: "/blog/page:num/"
 
 tag_permalink_style: pretty
 tag_page_layout: tag_page

@@ -1,44 +1,42 @@
+고운수달7555님, 네! home.html 파일을 수정해서 기존 블로그 포스트 목록을 완전히 제거하고, 외부 블로그 링크 목록만 표시되도록 바꿔 드릴게요.
+
+이제 home.html (혹은 _layouts 폴더 내의 해당 레이아웃 파일)은 이 사이트가 다른 블로그들로 연결되는 허브 역할을 하도록 만들 것입니다.
+
+🛠 수정된 home.html 파일 내용
+home.html 파일 (혹은 사용 중인 레이아웃 파일)의 내용을 아래 코드로 모두 교체해 주세요.
+
+html
+
+
 ---
-layout: default
+layout: default # 현재 home.html이 default 레이아웃을 사용하도록 되어 있음을 나타냅니다.
 ---
 {% unless site.dash.show_author == false %}
-  {% include author.html %}
+  {% include author.html %} {# 저자 정보를 표시 (필요시 제거 가능) #}
 {% endunless %}
-{{ content }}
-{% assign posts_count = paginator.posts | size %}
-{% if posts_count > 0 %}
-<h1>recent articles</h1>
-    <div class="post-links">
-      {% for post in paginator.posts %}
-        <div class="post-link-wrapper">
-          <a href="{{ post.url | relative_url }}" class="post-link">{{ post.title }}</a>
-          <div class="post-meta">
 
-            {% if site.plugins contains "jekyll/tagging" %}
-            <div class="post-tags">
-                {% for tag in post.tags %}
-                <a class="tag" href="{{ tag | tag_url }}">{{ tag }}</a>
-                {% endfor %}
-            </div>
-            {% endif %}
-            {% if site.dash.date_format %}
-              {{ post.date | date: site.dash.date_format }}
-            {% else %}
-              {{ post.date | date: "%b %-d, %Y" }}
-            {% endif %}
-            {% if site.show_excerpts == true %}
-              <div class="post-excerpt">
-                {{ post.content | strip_html | truncatewords: 50 }}
-              </div>
-            {% endif %}
-          </div>
+{{ content }} {# index.html 또는 index.md 파일의 내용을 여기에 표시합니다. #}
+             {# 이 부분에 블로그에 대한 간략한 소개 글을 추가할 수 있습니다. #}
+
+<div class="external-blogs-section">
+  <h2>연결된 블로그 목록</h2> {# 새로운 섹션 제목 #}
+  <p>아래 링크를 통해 제가 운영하는 다른 블로그 또는 추천 블로그들을 만나보세요!</p>
+
+  <ul class="blog-links-list">
+    {% for blog in site.data.external_blogs %} {# _data/external_blogs.yml 파일을 읽어옵니다. #}
+      <li>
+        <div class="blog-item-wrapper">
+          <span class="blog-index">{{ forloop.index }}.</span> {# 번호를 자동으로 매깁니다. #}
+          <a href="{{ blog.url }}" class="blog-title-link" target="_blank" rel="noopener noreferrer">
+            {{ blog.title }} {# 블로그 이름을 링크로 만듭니다. #}
+          </a>
+          {% if blog.description %}
+            <p class="blog-description">{{ blog.description }}</p> {# 블로그 설명을 표시합니다. #}
+          {% endif %}
         </div>
-      {% endfor %}
-    </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
 
-    {% include pagination.html %}
-
-    {% include tagcloud.html %}
-{% else %}
-<h2>no posts yet.</h2>
-{% endif %}
+{# 기존의 `posts_count` 확인 로직과 `recent articles` 섹션, 페이지네이션, 태그 클라우드 부분은 모두 제거되었습니다. #}
